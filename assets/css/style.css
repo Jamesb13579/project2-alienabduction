@@ -1,3 +1,15 @@
 body{
-    background-image: url(assets/images/spacebackground.jpg);
+    background-image: url(../images/skystars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-title{
+    font-size: 15vh;
+    text-align: center;
+    color: green;
+}
+
+#main-image{
+    
 }
