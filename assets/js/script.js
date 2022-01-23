@@ -34,3 +34,4 @@ var wordOptions = [
  */
 
 let word = wordOptions[Math.floor(Math.random()*wordOptions.length)];
+
