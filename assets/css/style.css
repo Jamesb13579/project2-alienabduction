@@ -2,14 +2,17 @@ body{
     background-image: url(../images/skystars.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 
 #game-title{
-    font-size: 15vh;
+    font-size: 13vh;
     text-align: center;
     color: green;
+    margin: 10px 0;
 }
 
 #main-image{
-    
+    max-width: 60vw;
+    margin: 0 20vw;
 }
