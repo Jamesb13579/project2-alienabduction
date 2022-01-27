@@ -77,7 +77,7 @@ function handleGuess(chosenLetter) {
       mistakes++;
       addToMistakes();
       gameOver();
-      updateHangmanPicture();
+      updateImage();
     }
 }
 
@@ -90,11 +90,15 @@ function gameWon(){
 function gameOver() {
     if (mistakes === maxWrongGuesses){
        document.getElementById('random-word').innerHTML = `You lost!! The answer was ${wordChoice}. Try again!!`;
-       document.getElementById('main-image').src =`assets/images/alien-0.jpg`;
+       document.getElementById('main-image').src =`assets/images/alien-8.jpg`;
     }
 }
 function addToMistakes(){
     document.getElementById("mistakes").innerHTML = mistakes;
+}
+
+function updateImage(){
+    document.getElementById('main-image').src = `assets/images/alien-` + mistakes + `.jpg`;
 }
 function reset(){
     location.reload()
