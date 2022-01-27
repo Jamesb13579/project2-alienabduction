@@ -96,9 +96,9 @@ function gameOver() {
 function addToMistakes(){
     document.getElementById("mistakes").innerHTML = mistakes;
 }
-
+let image = 0
 function updateImage(){
-    document.getElementById('main-image').src = `assets/images/alien-` + mistakes + `.jpg`;
+    document.getElementById('main-image').src = `assets/images/alien-` + ++image + `.jpg`;
 }
 function reset(){
     location.reload()
