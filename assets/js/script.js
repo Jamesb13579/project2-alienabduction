@@ -30,7 +30,7 @@ var wordOptions = [
 ];
 
 let wordChoice = '';
-let maxWrong = 6;
+let maxWrongGuesses = 8;
 let mistakes = 0;
 let guessed = [];
 let underlined = null;
@@ -73,15 +73,32 @@ function generateButtons() {
   
     if (wordChoice.indexOf(chosenLetter) >= 0) {
       guessedWord();
-      checkIfGameWon();
+      gameWon();
     } else if (wordChoice.indexOf(chosenLetter) === -1) {
       mistakes++;
-      updateMistakes();
-      checkIfGameLost();
+      addToMistakes();
+      gameOver();
       updateHangmanPicture();
     }
   }
 
+  function gameWon(){
+      if ( wordChoice === underlined) {
+          document.getElementById('random-word').innerHTML = "Congratulations Winner!!!!";
+      }
+  }
+
+  function gameOver() {
+      if (mistakes === maxWrongGuesses){
+        document.getElementById('random-word').innerHTML = "You lost!! Try again!!";
+        document.getElementById('main-image').src =`assets/images/alien-0.jpg`;
+      }
+  }
+
+
+function addToMistakes(){
+    document.getElementById("mistakes").innerHTML = mistakes;
+}
 chooseWord();
 generateButtons() 
 guessedWord();
