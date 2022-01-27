@@ -41,15 +41,14 @@ let underlined = null;
 function chooseWord() {
 
     wordChoice = wordOptions[Math.floor(Math.random() * wordOptions.length)];
-    alert(wordChoice)
-    }
+}
 
 
-    function guessedWord() {
-        underlined = wordChoice.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+function guessedWord() {
+    underlined = wordChoice.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
       
-        document.getElementById('random-word').innerHTML = underlined;
-      }
+    document.getElementById('random-word').innerHTML = underlined;
+}
 document.getElementById('maxWrongGuesses').innerHTML = maxWrongGuesses;
 
 function generateButtons() {
@@ -65,9 +64,9 @@ function generateButtons() {
       `).join('');
   
     document.getElementById('keyboard').innerHTML = buttonsHTML;
-  }
+}
   
-  function handleGuess(chosenLetter) {
+function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
     document.getElementById(chosenLetter).setAttribute('disabled', true);
   
@@ -80,25 +79,28 @@ function generateButtons() {
       gameOver();
       updateHangmanPicture();
     }
-  }
+}
 
-  function gameWon(){
-      if ( wordChoice === underlined) {
-          document.getElementById('random-word').innerHTML = "Congratulations Winner!!!!";
-      }
-  }
+function gameWon(){
+    if ( wordChoice === underlined) {
+        document.getElementById('random-word').innerHTML = "Congratulations Winner!!!!";
+    }
+}
 
-  function gameOver() {
-      if (mistakes === maxWrongGuesses){
-        document.getElementById('random-word').innerHTML = "You lost!! Try again!!";
-        document.getElementById('main-image').src =`assets/images/alien-0.jpg`;
-      }
-  }
-
-
+function gameOver() {
+    if (mistakes === maxWrongGuesses){
+       document.getElementById('random-word').innerHTML = `You lost!! The answer was ${wordChoice}. Try again!!`;
+       document.getElementById('main-image').src =`assets/images/alien-0.jpg`;
+    }
+}
 function addToMistakes(){
     document.getElementById("mistakes").innerHTML = mistakes;
 }
+function reset(){
+    location.reload()
+}
+
+
 chooseWord();
 generateButtons() 
 guessedWord();
