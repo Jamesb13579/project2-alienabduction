@@ -4,7 +4,24 @@ body{
     background-size: cover;
     text-align: center;
 }
-
+.btn{
+    background-color: silver;
+    color: blue;
+    height: 5vw;
+    width: 20vw;
+    border-radius: inherit;
+}
+.btn-primary{
+        height: 6vw;
+        width: 6vw;
+        margin: 4px 4px;
+        color: blue;
+        border-radius: 40%;
+}
+#keyboard {
+    width: 70vw;
+    margin: 10px 15vw;
+}
 #game-title{
     font-size: 13vh;
     text-align: center;
