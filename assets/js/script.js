@@ -84,12 +84,14 @@ function handleGuess(chosenLetter) {
 function gameWon(){
     if ( wordChoice === underlined) {
         document.getElementById('random-word').innerHTML = "Congratulations Winner!!!!";
+        document.getElementById('keyboard').innerHTML = `Would you like to play again`; 
     }
 }
 
 function gameOver() {
     if (mistakes === maxWrongGuesses){
-       document.getElementById('random-word').innerHTML = `You lost!! The answer was ${wordChoice}. Try again!!`;
+       document.getElementById('random-word').innerHTML = `You lost!! Try again!!`;
+       document.getElementById('keyboard').innerHTML = `The answer was ${wordChoice}.`; 
        document.getElementById('main-image').src =`assets/images/alien-8.jpg`;
     }
 }
