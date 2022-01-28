@@ -108,5 +108,5 @@ function reset(){
 
 
 chooseWord();
-generateButtons() 
+generateButtons();
 guessedWord();

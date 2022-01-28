@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Permanent+Marker&family=Rubik+Beastly&display=swap');</style>
     <title>Alien Abduction</title>
 </head>
 <body>
-    
-    
     <div>
         <h1 id = "game-title" >Alien Abduction!</h1>
     </div>
@@ -18,12 +17,12 @@
             <div id="gameplay" >
         <!-- alien image -->
         <img id = 'main-image' src="assets/images/alien-0.jpg" alt="design image for game, spaceman getting abducted">
+        <div id="guesses">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrongGuesses'></span></div></div>
         <!-- random word -->
                 <div id='random-word'>word chosen from array</div>
         <!-- On-screen keyboard -->
-        <div id="keyboard" ></div>
-        <div>Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrongGuesses'></span></div>
-        <div><button class="btn" onClick="reset()">Restart Game</button></div>
+        <div id="keyboard" ></div>        
+                <div><button class="btn" onClick="reset()">Restart Game</button></div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
