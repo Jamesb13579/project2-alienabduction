@@ -33,7 +33,7 @@ __As an existing user__
 ## Design
 __Theme__
 
-As I was making a game about aliens I wanted to imagery and fonts to be suitable. The font that I used is __Josefin Sans__. I felt this suited the style of game I was trying to create, the font is available from [google fonts](https://https://fonts.google.com/).
+As I was making a game about aliens I wanted to imagery and fonts to be suitable. The font that I used is __Josefin Sans__ and __Perminent Marker__. I felt this suited the style of game I was trying to create, the font is available from [google fonts](https://https://fonts.google.com/).
 
 
 __Color Scheme__
@@ -130,13 +130,9 @@ CSS: No errors reported
 JAVASCRIPT: No errors reported
 
 __Lighthouse__
-Mobile
-
-![](docs/lighthouse_mobile.png)
-
 Desktop
 
-![](docs/lighthouse_desktop.png)
+![](docs/lighthousescore.png)
 
 __Bugs & Fixes__
 No Bugs at time of deployment.
