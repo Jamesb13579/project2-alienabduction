@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    height: 100%;
 }
 
 /* style for reset button*/
@@ -30,7 +31,9 @@ body{
     margin: 3px;
     color: black;
     border-radius: 40%;
-    font-size: 3.5vw;
+    font-size: 3vw;
+    padding: 0;
+    text-align: center;
 }
 #keyboard {
     width: 70vw;
@@ -39,7 +42,7 @@ body{
     font-size: 2.5vw;
 }
 #game-title{
-    font-size: 13vh;
+    font-size: 13vw;
     text-align: center;
     color: whitesmoke;
     margin: 10px 0;
@@ -49,4 +52,35 @@ body{
 #main-image{
     max-width: 60vw;
     margin: 0 20vw;
+}
+
+/* media query 768 px**/
+
+@media screen and (min-width: 768px){
+
+    #game-title {
+        font-size: 6vw;
+    }
+
+    #main-image {
+        max-width: 30vw;
+        
+    }
+
+    #keyboard {
+        width: 90vw;
+        margin: 10px 5vw;
+    }
+
+    .btn-primary {
+        height: 3vw;
+        width: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .random-word {
+        font-size: 2.5vw;
+    }
+    
+
 }

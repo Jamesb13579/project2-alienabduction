@@ -1,108 +1,178 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project Two: Alien Abduction game
 
-Welcome Jamesb13579,
+I created this game as a new version of hangman. One that is more in tune with modern society.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The aim for the game is for people to be able to enjoy guessing words based around alien abduction. With simple animations to keep people attention.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![](docs/amiresponsive.png)
 
-## Gitpod Reminders
+View live site: https://jamesb13579.github.io/project2-alienabduction/
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table Of Contents
 
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+  * [User Stories](#user-stories) 
+  * [Design](#design)
+  * [Features](#features)
+  * [Technologies used](#technologies-used)
+  * [Testing](#testing)
+  * [Deployment and Cloning](#deployment-and-cloning)
+  * [Credits](#credits)
 ---
 
-Happy coding!
+## User Stories
+__As a new user__
+
+- I would be like to be able to easily navigate the game.
+- I would like to be able to be able to play intuitively.
+
+__As an existing user__
+
+- I would like to see regular updates to the word to be guessed, so the game doesnt get boring to quickly.
+- I would like to be able to access this website on the go, so good mobile responsiveness is important.
+
+## Design
+__Theme__
+
+As I was making a game about aliens I wanted to imagery and fonts to be suitable. The font that I used is __Josefin Sans__. I felt this suited the style of game I was trying to create, the font is available from [google fonts](https://https://fonts.google.com/).
+
+
+__Color Scheme__
+
+The color scheme was chosen using a complimentry color generator, which I play with until I found the options that seemed right to me.
+
+__Photos and Icons__
+
+I created images suitiable to the game using paint
+
+__Wireframes__
+
+For this project I created one wireframe for how I wanted the game to look. I did change things as I built the game, as trial and error changed how I liked it.
+
+![](docs/index.png)
+
+## Features
+
+__Header__
+
+In the Header I have included the authors logo, and underneath that placed the nav bar and linked all his social media.
+
+![](docs/header.png)
+
+__Navigation__
+
+The navigation menu bar is on the top left of the home page and is an easy way for the user to navigate to their sought after section within the site. To provide users with an introduction to what they can expect to discover on the website, each menu option has been named accordingly to link to its corresponding section. Also included in this section are links to the authors Amazon, Goodreads, Facebook and Twitter profiles.
+
+![](docs/nav.png)
+
+__Home Page__
+
+The home page has a background image that I have cropped from the front cover of one Frank Tayells books. The image gives the user an idea of the genre of his work.
+
+![](docs/home.png)
+
+__About Author__
+
+The about author section was supposed to include an image of the author, plus additional information about the author, and the books and series he is working on. Unfortunately, when I was speaking to the author he said he prefers to be judged on his work rather than appearance so I used an image that he uses on his goodreads and amazon instead.
+
+![](docs/about.png)
+
+__Books__
+
+The books page shows all of the authors current books split into series, divided with section titles and ordered into release date. The images are all links to the correct Amazon sales page.
+
+![](docs/books_layout.png)
+
+__Subscribe__
+
+The user can subscribe to the authors newsletter as they submit. The user must enter their e-mail address into the input fields for the form to submit. There are prompt messages that appear when this information is not correctly inputted. Currently this goes to code institute file dump.
+
+![](docs/subscribe.png)
+
+__Message the author__
+
+This section is there to enable direct interaction with the author. Requesting first name, surname, email and message details the user can then submit these details. Again there is a prompt message if information is incorrectly inputted. Currently this goes to code institute file dump.
+
+![](docs/message.png)
+
+__Hover__
+
+Each clickable element on the website changes color and/or underlines when hovered over with the mouse. Aswell as this I have applied a zoom animation to the book elements when they are hovered over to a scale of 1.05.
+
+__Footer__
+
+In the footer I have included a copyright for the authors images as he asked for that to be included and again, linked all his social media.
+
+![](docs/footer.png)
+
+## Technologies used
+
+- HTML5: Used to make the structure and content of the game
+- CSS3: Used to style the game content and appearance
+- JAVASCRIPT: Used to make the game interactive
+- GITPOD: Used to code the game
+- GITHUB: Used to store, deploy and host the game
+- Balsamiq Wireframes: Used to draft page design and layout
+
+## Testing
+
+I used Dev tools in chrome constantly during the development of my code to try and fix the style and catch any issues, I committed and detailed as much as possible of the changes made to my code. 
+
+__Validator Testing__
+
+HTML: No errors reported
+
+![](docs/html_validator.png)
+
+CSS: No errors reported
+
+![](docs/css_validator.png)
+
+JAVASCRIPT: No errors reported
+
+__Lighthouse__
+Mobile
+
+![](docs/lighthouse_mobile.png)
+
+Desktop
+
+![](docs/lighthouse_desktop.png)
+
+__Bugs & Fixes__
+No Bugs at time of deployment.
+I had some issues with the game with JAVASCRIPT but i thing i have most of them sorted.
+
+## Deployment and Cloning
+
+__Deployment__
+
+The website was deployed to github pages using the following steps:
+- Clicked on my repository for first-project. 
+- Clicked settings tab and navigated down to "Pages"
+- Selected "Main" in branch drop down box
+- Clicked "save" which produced the live link which can be viewed here https://jamesb13579.github.io/project2-alienabduction/
+
+__Cloning__
+
+In the File menu, click Clone Repository.
+- Click the tab that corresponds to the location of the first-project repository.
+- Choose the first-project repository from the list of options to clone.
+- Click choose and navigate to a local path where you want to clone the repository.
+- Click Clone.
+
+## Credits
+
+__Tools & Media__
+
+- Fonts used supplied by [Google Fonts](https://https://fonts.google.com/)
+- Images used were created by me.
+- Color scheme created using the website [Colormind](http://colormind.io/)
+- Images used in this document were screen shot from validators and amiresponsive.
+- Converted images with [Cloud Convert](https://cloudconvert.com/)
+
+__Code and Tutorials__
+
+- Learnt how to build onscreen keyboard through youtube tutorials.
+- W3schools also helped with me learn extra about more about javascript.
+- Learnt more about javascript with a course from [Udemy](https://www.udemy.com/)
+- Learnt how to make a [Favicon](https://www.youtube.com/watch?v=kEf1xSwX5D8) 
