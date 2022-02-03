@@ -48,61 +48,33 @@ __Wireframes__
 
 For this project I created one wireframe for how I wanted the game to look. I did change things as I built the game, as trial and error changed how I liked it.
 
-![](docs/index.png)
+![](docs/gameWireframe.png)
 
 ## Features
 
-__Header__
+__Title__
 
-In the Header I have included the authors logo, and underneath that placed the nav bar and linked all his social media.
+The title for this game is a H1 heading.
 
-![](docs/header.png)
+![](docs/title.png)
 
-__Navigation__
+__Main Image__
 
-The navigation menu bar is on the top left of the home page and is an easy way for the user to navigate to their sought after section within the site. To provide users with an introduction to what they can expect to discover on the website, each menu option has been named accordingly to link to its corresponding section. Also included in this section are links to the authors Amazon, Goodreads, Facebook and Twitter profiles.
+The main image is centered on the page. I created 8 images using paint having the spaceship move incredimentally across the page as the game progesses.
 
-![](docs/nav.png)
+![](docs/mainImage.png)
 
-__Home Page__
+__Guesses Left__
 
-The home page has a background image that I have cropped from the front cover of one Frank Tayells books. The image gives the user an idea of the genre of his work.
+This section shows how many guesses left a player of the game has out of 8.
 
-![](docs/home.png)
+![](docs/guesses.png)
 
-__About Author__
+__Keyboard__
 
-The about author section was supposed to include an image of the author, plus additional information about the author, and the books and series he is working on. Unfortunately, when I was speaking to the author he said he prefers to be judged on his work rather than appearance so I used an image that he uses on his goodreads and amazon instead.
+This section contains the on screen keyboard. This keyboard also changes to a win or loss message depending on the outcome of the game.
 
-![](docs/about.png)
-
-__Books__
-
-The books page shows all of the authors current books split into series, divided with section titles and ordered into release date. The images are all links to the correct Amazon sales page.
-
-![](docs/books_layout.png)
-
-__Subscribe__
-
-The user can subscribe to the authors newsletter as they submit. The user must enter their e-mail address into the input fields for the form to submit. There are prompt messages that appear when this information is not correctly inputted. Currently this goes to code institute file dump.
-
-![](docs/subscribe.png)
-
-__Message the author__
-
-This section is there to enable direct interaction with the author. Requesting first name, surname, email and message details the user can then submit these details. Again there is a prompt message if information is incorrectly inputted. Currently this goes to code institute file dump.
-
-![](docs/message.png)
-
-__Hover__
-
-Each clickable element on the website changes color and/or underlines when hovered over with the mouse. Aswell as this I have applied a zoom animation to the book elements when they are hovered over to a scale of 1.05.
-
-__Footer__
-
-In the footer I have included a copyright for the authors images as he asked for that to be included and again, linked all his social media.
-
-![](docs/footer.png)
+![](docs/keyboard.png)
 
 ## Technologies used
 
@@ -121,13 +93,15 @@ __Validator Testing__
 
 HTML: No errors reported
 
-![](docs/html_validator.png)
+![](docs/htmlval.png)
 
 CSS: No errors reported
 
-![](docs/css_validator.png)
+![](docs/cssval.png)
 
 JAVASCRIPT: No errors reported
+
+![](docs/jsval.png)
 
 __Lighthouse__
 Desktop
@@ -135,7 +109,7 @@ Desktop
 ![](docs/lighthousescore.png)
 
 __Bugs & Fixes__
-No Bugs at time of deployment.
+One warning on jshint.
 I had some issues with the game with JAVASCRIPT but i thing i have most of them sorted.
 
 ## Deployment and Cloning

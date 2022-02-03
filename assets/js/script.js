@@ -98,12 +98,12 @@ function gameOver() {
 function addToMistakes(){
     document.getElementById("mistakes").innerHTML = mistakes;
 }
-let image = 0
+let image = 0;
 function updateImage(){
-    document.getElementById('main-image').src = `assets/images/alien-` + ++image + `.jpg`;
+    document.getElementById('main-image').src = `assets/images/alien-` + (image + 1) + `.jpg`;
 }
 function reset(){
-    location.reload()
+    location.reload();
 }
 
 
